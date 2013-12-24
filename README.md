@@ -14,12 +14,15 @@ I haven't developed it whole cloth, it's been hacked together as a learning expe
 1) clone repo, download zip, or create new applescript file from source
 2) move script to one of the following locations:
 System Level:
+
     /Library/Scripts
 
 User Level:
+
     ~/Library/Scripts
 
 Application Level:
+
     ~/Library/Scripts/Applications/OmniFocus
 
 you may need to create these folders if they don't already exist. Scripts in the application folder are able to be pinned to the taskbar within OmniFocus
@@ -28,10 +31,10 @@ you may need to create these folders if they don't already exist. Scripts in the
 
 There are a few variables that are easily changed to generate different kinds reports:
 
-* ignoreList - contains list of names of folders you'd like to exclude from the report (such as a routines folder, or a personal folder if the report is for work or vice-versa). Default is {""}
-* timeScope - the number of days you'd like the report to be generated over. The default is 7 (one week).
-* nameReport - the file you'd like generate. The default is a combination of current date and the value of timescope as a markdown file. The formatting is designed for markdown, but plaintext exports (txt) should work as well.
+* __ignoreList__ - contains list of names of folders you'd like to exclude from the report (such as a routines folder, or a personal folder if the report is for work or vice-versa). Default is {""}
+* __timeScope__ - the number of days you'd like the report to be generated over. The default is 7 (one week).
+* __nameReport__ - the file you'd like generate. The default is a combination of current date and the value of timescope as a markdown file. The formatting is designed for markdown, but plaintext exports (txt) should work as well.
 
 ## Future development
-* maybe timeScope will be set by a user dialog with a few options such as "yesterday, today, this week, this month" instead of a variable inside the script. 
+* maybe __timeScope__ will be set by a user dialog with a few options such as "yesterday, today, this week, this month" instead of a variable inside the script. 
 * formatting is currently baked in wrt to delimiters for values. Maybe a future version will allow users to configure their own delimiters if they like.
